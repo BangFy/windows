@@ -7,11 +7,12 @@ services:
       RAM_SIZE: "12G"
       CPU_CORES: "8"
       DISK_SIZE: "380G"
+      DISK_SIZE2: "256G"
+      DISK_SIZE3: "128G"
       USERNAME: "MasR"
       PASSWORD: "adminr"
       REGION: "id_ID"
       KEYBOARD: "en_US"
-      EDITION: "core"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -21,8 +22,10 @@ services:
       - 8006:8006
       - 8006:8006/tcp
       - 3389:3389/tcp
-      - 3389:3389/udp
+      - 3389:3389
     volumes:
       - ./windows:/storage
+      - ./windows2:/storage2
+      - ./windows3:/storage3
     restart: always
     stop_grace_period: 2m
