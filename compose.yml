@@ -3,12 +3,12 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "2022"
+      VERSION: "7u"
       RAM_SIZE: "12G"
       CPU_CORES: "8"
-      DISK_SIZE: "380G"
-      DISK_SIZE2: "256G"
-      DISK_SIZE3: "128G"
+      DISK_SIZE: "1024G"
+      DISK_SIZE2: "526G"
+      DISK_SIZE3: "526G"
       USERNAME: "MasR"
       PASSWORD: "adminr"
       REGION: "id_ID"
@@ -25,7 +25,7 @@ services:
       - 3389:3389
     volumes:
       - ./windows:/storage
-      - ./windows2:/storage2
-      - ./windows3:/storage3
+      - ./example2:/storage2
+      - ./example3:/storage3
     restart: always
     stop_grace_period: 2m
