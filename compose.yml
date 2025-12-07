@@ -1,12 +1,12 @@
 services:
   windows:
-    image: dockurr/windows
+    image: BangFy/windows
     container_name: windows
     environment:
-      VERSION: "2016"
-      RAM_SIZE: "16G"
-      CPU_CORES: "6"
-      DISK_SIZE: "200G"
+      VERSION: "2022"
+      RAM_SIZE: "12G"
+      CPU_CORES: "8"
+      DISK_SIZE: "380G"
       USERNAME: "MasR"
       PASSWORD: "adminr"
     devices:
