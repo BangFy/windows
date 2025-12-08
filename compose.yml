@@ -11,8 +11,8 @@ services:
       DISK_SIZE3: "526G"
       USERNAME: "MasR"
       PASSWORD: "adminr"
-      REGION: "id_ID"
-      KEYBOARD: "id_ID"
+      REGION: "id-ID"
+      KEYBOARD: "en-US"
     devices:
       - /dev/kvm
       - /dev/net/tun
